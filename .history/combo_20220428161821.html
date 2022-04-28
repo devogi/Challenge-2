@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        background-color: #ededed;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    h1 {
+        padding: 40px;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    li a {
+        text-decoration: none;
+        color: #2d2f31;
+    }
+
+      li a:hover {
+       text-transform: ;
+    }
+
+
+    nav {
+        width: 300px;
+        background: #000000;
+        margin: 40px auto;
+        border-radius: 80px;
+    }
+
+    span {
+        padding: 30px;
+        border-radius: 100px;
+        background: #2d2f31;
+        color: white;
+        font-size: 1.2em;
+        font-variant: small-caps;
+        cursor: pointer;
+        display: block;
+    }
+
+    span::after {
+        float: right;
+        right: 10%;
+        content: ">";
+    }
+
+    .slide {
+        clear: both;
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+        text-align: center;
+        transition: height .4s ease;
+    }
+
+    .slide li {
+        padding: 30px;
+    }
+
+    #touch {
+        position: absolute;
+        opacity: 0;
+        height: 0px;
+    }
+
+    #touch:checked+.slide {
+        height: 300px;
+
+    }
+</style>
+
+<body>
+
+    <nav>
+
+        <label for="touch"><span>Combo box</span></label>
+        <input type="checkbox" id="touch">
+
+        <ul class="slide">
+            <li><a href="#">combo box hover</a></li>
+            <li><a href="#">combo box hover</a></li>
+            <li><a href="#">combo box hover</a></li>
+            <li><a href="#">combo box hover</a></li>
+        </ul>
+
+    </nav>
+</body>
+
+</html>
